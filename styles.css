@@ -334,3 +334,83 @@ header nav ul li a:hover::after {
     left: 75%;     
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 20px 10px;
+  }
+
+  .item {
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+  .product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .product-img img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .arrows,
+  .indicators,
+  .tech-circle {
+    display: none !important; /* Oculta elementos que atrapalham no mobile */
+  }
+
+  .container::before {
+    display: none; /* Remove o círculo pulsante no mobile para evitar sobreposição */
+  }
+}
+
