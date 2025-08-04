@@ -134,7 +134,7 @@ header nav ul li a:hover::after {
     z-index: 2; 
 }
 .product-img img {
-    max-width: 500px;
+    max-width: 370px;
     max-height: 60%;
     filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.5));  
     
